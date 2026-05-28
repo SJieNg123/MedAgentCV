@@ -45,3 +45,4 @@ preview.png
 
 # Local scripts (not part of app)
 scripts/
+.langgraph_api/

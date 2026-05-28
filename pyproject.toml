@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "medagentcv"
+version = "0.1.0"
+description = "MedAgentCV LangGraph workflow"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "python-multipart",
+    "pydantic",
+    "pydantic-settings",
+    "langchain-core",
+    "langchain-openai",
+    "langgraph",
+    "transformers<5",
+    "timm",
+    "Pillow",
+    "pydicom",
+    "opencv-python-headless",
+    "numpy",
+    "pandas",
+    "pyyaml",
+    "matplotlib",
+    "scipy",
+    "seaborn",
+    "tqdm",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = ["app*"]

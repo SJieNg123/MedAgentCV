@@ -16,8 +16,10 @@ Then edit `.env` with your values.
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
-pip install -r requirements.txt
+pip install -e .
 ```
+
+If you prefer a plain requirements install for a one-off run, use `pip install -r requirements.txt` after activating the environment.
 
 ### 3) Run the API
 ```bash
